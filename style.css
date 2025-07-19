@@ -30,6 +30,9 @@ body {
   width: 100%;
   position: relative;
   min-height: 90vh;
+  background-repeat: no-repeat;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
 }
 
 .navbar {
@@ -41,7 +44,6 @@ body {
   z-index: 1000;
   position: fixed;
   top: 0;
-
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(225, 225, 225, 0.1);
   transition: all 0.3s ease;
@@ -146,6 +148,11 @@ body {
   height: auto;
   max-height: 570px;
   border-radius: 8px;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
 }
 
 /* About Me Section Styles */
@@ -161,6 +168,9 @@ body {
   justify-content: center;
   padding: 80px 20px;
   position: relative;
+  background-repeat: no-repeat;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
 }
 
 .about-glass-card {
@@ -205,7 +215,11 @@ body {
   border-right: none;
   object-fit: cover;
   aspect-ratio: 1/1;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
 }
 
 .about-text-overlay {
@@ -274,10 +288,10 @@ body {
   background: linear-gradient(135deg, #a3bffa, #5a7ec8);
 }
 
-/* Portfolio Section Styles */
+/* Portfolio Section Styles - Updated for wider images */
 .portfolio-section {
   width: 100%;
-  padding: 6rem 2rem;
+  padding: 6rem 1rem; /* Reduced side padding */
   position: relative;
   overflow: hidden;
   background-image: url("images/projects.png");
@@ -285,6 +299,9 @@ body {
   background-position: center;
   background-attachment: fixed;
   min-height: 90vh;
+  background-repeat: no-repeat;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
 }
 
 .portfolio-glass {
@@ -292,14 +309,15 @@ body {
   backdrop-filter: blur(40px);
   border-radius: 16px;
   border: 1px solid rgba(225, 225, 225, 0.3);
-  padding: 3rem 2rem;
+  padding: 3rem 1rem; /* Reduced side padding */
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   position: relative;
   z-index: 500;
+  max-width: 100%;
 }
 
 .portfolio-heading {
-  margin-left: 6%;
+  margin-left: 5%; /* Adjusted for better mobile alignment */
   margin-bottom: 3rem;
 }
 
@@ -315,11 +333,11 @@ body {
   align-items: center;
   width: 100%;
   position: relative;
-  padding: 0 50px;
+  padding: 0 10px; /* Reduced side padding */
 }
 
 .projects-wrapper {
-  width: calc(100% - 100px);
+  width: calc(100% - 20px); /* Reduced wrapper padding */
   overflow: hidden;
   margin: 0 auto;
 }
@@ -328,21 +346,21 @@ body {
   display: flex;
   transition: transform 0.5s ease;
   will-change: transform;
-  gap: 20px;
+  gap: 15px; /* Reduced gap between items */
 }
 
 .project-item {
-  flex: 0 0 calc(100% - 20px);
-  min-width: calc(100% - 20px);
-  padding: 0 10px;
+  flex: 0 0 calc(100% - 10px); /* Wider items on mobile */
+  min-width: calc(100% - 10px);
+  padding: 0 5px; /* Reduced padding */
   transition: transform 0.3s ease;
   box-sizing: border-box;
 }
 
 @media (min-width: 768px) {
   .project-item {
-    flex: 0 0 calc(50% - 20px);
-    min-width: calc(50% - 20px);
+    flex: 0 0 calc(50% - 15px); /* Wider items on tablet */
+    min-width: calc(50% - 15px);
   }
 }
 
@@ -359,7 +377,7 @@ body {
 
 .project-image-container {
   width: 100%;
-  height: 350px;
+  height: 380px; /* Increased height for better proportions */
   border-radius: 12px;
   overflow: hidden;
   margin-bottom: 1.5rem;
@@ -373,6 +391,11 @@ body {
   height: 100%;
   object-fit: cover;
   transition: transform 0.5s ease;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
 }
 
 .project-image-container:hover img {
@@ -381,7 +404,7 @@ body {
 
 .project-details {
   text-align: center;
-  padding: 0 10px;
+  padding: 0 5px; /* Reduced padding */
 }
 
 .project-details h3 {
@@ -400,8 +423,8 @@ body {
 
 .project-nav-arrow {
   position: absolute;
-  width: 50px;
-  height: 50px;
+  width: 40px; /* Smaller arrows */
+  height: 40px;
   background: rgba(78, 7, 199, 0.2);
   border-radius: 50%;
   display: flex;
@@ -423,11 +446,11 @@ body {
 }
 
 .arrow-prev {
-  left: 0;
+  left: -10px; /* Positioned closer to edge */
 }
 
 .arrow-next {
-  right: 0;
+  right: -10px;
 }
 
 .project-dots {
@@ -464,6 +487,9 @@ body {
   justify-content: center;
   padding: 80px 20px;
   position: relative;
+  background-repeat: no-repeat;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
 }
 
 .contact-glass-card {
@@ -576,6 +602,11 @@ body {
   max-width: 300px;
   height: auto;
   border-radius: 12px;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
 }
 
 /* Responsive Design */
@@ -714,28 +745,41 @@ body {
   }
 
   .portfolio-section {
-    padding: 4rem 1rem;
+    padding: 4rem 0.5rem; /* Very small side padding */
+  }
+
+  .portfolio-glass {
+    padding: 3rem 0.5rem;
   }
 
   .portfolio-heading h1 {
     font-size: 2rem;
+    margin-left: 5%;
   }
 
   .projects-container {
-    padding: 0 40px;
+    padding: 0 5px; /* Minimal padding */
   }
 
   .projects-wrapper {
-    width: calc(100% - 80px);
+    width: calc(100% - 10px); /* Very narrow wrapper */
+  }
+
+  .project-item {
+    flex: 0 0 calc(100% - 5px) !important; /* Nearly full width */
+    min-width: calc(100% - 5px) !important;
+    padding: 0 2px; /* Minimal padding */
   }
 
   .project-image-container {
-    height: 250px;
+    height: 400px; /* Taller container for better image display */
+    width: 98%; /* Almost full width */
+    margin: 0 auto;
   }
 
   .project-nav-arrow {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     font-size: 1.2rem;
   }
 
@@ -765,6 +809,32 @@ body {
 
   .submit-btn {
     align-self: center;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  /* Special adjustments for medium-small devices */
+  .project-item {
+    flex: 0 0 calc(100% - 10px) !important;
+    min-width: calc(100% - 10px) !important;
+  }
+  
+  .project-image-container {
+    height: 450px; /* Even taller for these devices */
+    width: 95%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+  /* Tablet-specific adjustments */
+  .project-item {
+    flex: 0 0 calc(50% - 10px) !important; /* Wider items */
+    min-width: calc(50% - 10px) !important;
+  }
+  
+  .project-image-container {
+    height: 350px;
+    width: 100%;
   }
 }
 
@@ -859,15 +929,16 @@ body {
   }
 
   .project-image-container {
-    height: 200px;
+    height: 420px; /* Very tall container for small mobile */
+    width: 98%; /* Nearly full width */
   }
 
   .projects-container {
-    padding: 0 30px;
+    padding: 0 5px;
   }
 
   .projects-wrapper {
-    width: calc(100% - 60px);
+    width: calc(100% - 10px);
   }
 
   .contact-heading {
@@ -882,8 +953,16 @@ body {
   .contact-form-container {
     padding: 30px 20px;
   }
-
+ 
   .contact-image {
     max-width: 300px;
+  }
+
+  /* Disable parallax on small mobile devices */
+  .hero-section,
+  .about-section,
+  .portfolio-section,
+  .contact-section {
+    background-attachment: scroll;
   }
 }
