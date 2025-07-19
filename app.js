@@ -165,7 +165,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     
     Swal.fire({
-      title: 'To Read Case Study',
+      title: 'Read Case Study',
       text: `Are you sure you want to open this Project ?`,
       icon: 'question',
       showCancelButton: true,
