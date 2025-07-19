@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,17 +10,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    
-    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </head>
+
 <body>
     <!-- Hero Section with Background Image -->
     <div class="hero-section" id="home">
         <!-- Navbar -->
         <nav class="navbar">
-            <div class="logo">
-                <img src="images/logo.png" alt="Logo" >
-            </div>
+            <a href="index.html">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Logo">
+                </div>
+            </a>
             <div class="nav-links">
                 <a href="#home">Home</a>
                 <a href="#about">About Me</a>
@@ -40,7 +44,10 @@
                 <div class="text-content">
                     <h1>Hello!</h1>
                     <h2>I'm Leila Akbari</h2>
-                    <p>Hi, I'm a professional artist and designer based in Canada, specializing in using code as a creative medium. I craft visually stunning and functional designs tailored to my clients' unique needs, striving for that perfect moment of user interaction. I am committed to continuous learning and innovation in my field.</p>
+                    <p>Hi, I'm a professional artist and designer based in Canada, specializing in using code as a
+                        creative medium. I craft visually stunning and functional designs tailored to my clients' unique
+                        needs, striving for that perfect moment of user interaction. I am committed to continuous
+                        learning and innovation in my field.</p>
                 </div>
                 <!-- Image -->
                 <div class="image-content">
@@ -63,7 +70,13 @@
                 </div>
             </div>
             <div class="about-content">
-                <p>I'm a UI/UX designer passionate about creating engaging, impactful product experiences. I have been immersed in the world of art and design for the past 10 years after receiving my diploma in graphic design and my bachelor's degree in textile design. At the same time, I became very interested in being able to advance my art in the direction of the digital space, and this became the beginning for me to learn and work in the field of website design. I am also very interested in nature and sometimes I take pictures and paint for fun. If you think that I would be a great fit for your team as a UI/UX designer, let's discuss more!</p>
+                <p>I'm a UI/UX designer passionate about creating engaging, impactful product experiences. I have been
+                    immersed in the world of art and design for the past 10 years after receiving my diploma in graphic
+                    design and my bachelor's degree in textile design. At the same time, I became very interested in
+                    being able to advance my art in the direction of the digital space, and this became the beginning
+                    for me to learn and work in the field of website design. I am also very interested in nature and
+                    sometimes I take pictures and paint for fun. If you think that I would be a great fit for your team
+                    as a UI/UX designer, let's discuss more!</p>
                 <a href="#contact" class="contact-btn">Contact Me</a>
             </div>
         </div>
@@ -75,10 +88,10 @@
             <div class="portfolio-heading">
                 <h1>Click On Each Project to See Details</h1>
             </div>
-            
+
             <div class="projects-container">
                 <button class="project-nav-arrow arrow-prev" id="prevBtn">❮</button>
-                
+
                 <div class="projects-wrapper">
                     <div class="projects-track" id="project-slider">
                         <!-- Project 1 -->
@@ -91,7 +104,7 @@
                                 <p>UI/UX Design</p>
                             </div>
                         </div>
-                        
+
                         <!-- Project 2 -->
                         <div class="project-item">
                             <div class="project-image-container" data-project="2">
@@ -102,7 +115,7 @@
                                 <p>UI/UX Design</p>
                             </div>
                         </div>
-                        
+
                         <!-- Project 3 -->
                         <div class="project-item">
                             <div class="project-image-container" data-project="3">
@@ -113,22 +126,24 @@
                                 <p>3D Design Website</p>
                             </div>
                         </div>
-                        
+
                         <!-- Project 4 -->
                         <div class="project-item">
                             <div class="project-image-container" data-project="4">
-                                <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Task Management">
+                                <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                                    alt="Task Management">
                             </div>
                             <div class="project-details">
                                 <h3>Task Management</h3>
                                 <p>UI/UX Design</p>
                             </div>
                         </div>
-                        
+
                         <!-- Project 5 -->
                         <div class="project-item">
                             <div class="project-image-container" data-project="5">
-                                <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Recipe Finder">
+                                <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                                    alt="Recipe Finder">
                             </div>
                             <div class="project-details">
                                 <h3>Recipe Finder</h3>
@@ -137,17 +152,17 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <button class="project-nav-arrow arrow-next" id="nextBtn">❯</button>
             </div>
-            
+
             <div class="project-dots" id="project-dots">
                 <!-- Dots will be added dynamically -->
             </div>
         </div>
     </section>
 
-      <!-- Contact Section -->
+    <!-- Contact Section -->
     <section id="contact" class="contact-section">
         <div class="contact-glass-card">
             <div class="contact-form-container">
@@ -181,6 +196,7 @@
         </div>
     </section>
 
-   <script src="app.js"></script>
+    <script src="app.js"></script>
 </body>
+
 </html>
