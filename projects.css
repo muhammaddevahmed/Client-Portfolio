@@ -463,10 +463,10 @@ body {
 
 .skin-divider {
   width: 100%;
-  height: 20px; 
-  background-color: #f5f3f2; 
-  margin: 0; 
-  border: none; 
+  height: 20px;
+  background-color: #f5f3f2;
+  margin: 0;
+  border: none;
 }
 
 /* Roles Section */
@@ -490,7 +490,7 @@ body {
 }
 
 .role-heading {
-  font-family: 'Sellebou', sans-serif;
+  font-family: "Sellebou", sans-serif;
   font-size: 28px;
   margin-bottom: 20px;
   color: #030422;
@@ -585,7 +585,7 @@ body {
 
 .research-image img {
   width: 110%;
-   aspect-ratio: 16 / 9;
+  aspect-ratio: 16 / 9;
   object-fit: cover;
   border-radius: 8px;
   height: 50vh;
@@ -608,7 +608,7 @@ body {
 }
 
 .research-heading {
-  font-family: 'Sellebou', sans-serif;
+  font-family: "Sellebou", sans-serif;
   font-size: 36px;
   margin-bottom: 25px;
   color: #030422;
@@ -626,7 +626,7 @@ body {
   .research-container {
     gap: 40px;
   }
-  
+
   .research-heading {
     font-size: 32px;
   }
@@ -636,22 +636,22 @@ body {
   .research-section {
     padding: 2% 30px;
   }
-  
+
   .research-container {
     flex-direction: column;
     gap: 30px;
   }
-  
+
   .research-image {
     width: 100%;
     max-width: 400px;
     margin: 0 auto;
   }
-  
+
   .research-heading {
     font-size: 28px;
   }
-  
+
   .research-text p {
     font-size: 16px;
   }
@@ -661,12 +661,12 @@ body {
   .research-section {
     padding: 2% 20px;
   }
-  
+
   .research-heading {
     font-size: 24px;
     margin-bottom: 20px;
   }
-  
+
   .image-caption {
     font-size: 12px;
   }
@@ -717,10 +717,10 @@ body {
 }
 
 .sitemap-image {
-width: 100%;
-border-radius: 24px;
-overflow: hidden;
-box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  width: 100%;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
 .sitemap-image img {
@@ -735,11 +735,11 @@ box-shadow: 0 20px 40px rgba(0,0,0,0.1);
   .insights-grid {
     gap: 30px;
   }
-  
+
   .insight-heading {
     font-size: 24px;
   }
-  
+
   .sitemap-heading {
     font-size: 32px;
   }
@@ -749,12 +749,12 @@ box-shadow: 0 20px 40px rgba(0,0,0,0.1);
   .insights-section {
     padding: 2% 30px;
   }
-  
+
   .insights-grid {
     flex-direction: column;
     gap: 40px;
   }
-  
+
   .sitemap-heading {
     font-size: 28px;
     margin-bottom: 20px;
@@ -765,15 +765,15 @@ box-shadow: 0 20px 40px rgba(0,0,0,0.1);
   .insights-section {
     padding: 2% 20px;
   }
-  
+
   .insight-heading {
     font-size: 22px;
   }
-  
+
   .insight-text p {
     font-size: 16px;
   }
-  
+
   .sitemap-heading {
     font-size: 24px;
   }
@@ -842,7 +842,7 @@ box-shadow: 0 20px 40px rgba(0,0,0,0.1);
   width: 100%;
   height: auto;
   border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .right-image img {
@@ -918,7 +918,7 @@ box-shadow: 0 20px 40px rgba(0,0,0,0.1);
   margin-bottom: 2%;
   display: flex;
   justify-content: center;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
 }
 
 .method-wrapper {
@@ -964,7 +964,7 @@ box-shadow: 0 20px 40px rgba(0,0,0,0.1);
   height: 70%;
   object-fit: cover;
   border-radius: 24px;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
   margin-top: 2%;
 }
 
@@ -979,7 +979,7 @@ box-shadow: 0 20px 40px rgba(0,0,0,0.1);
   .method-main-heading {
     font-size: 36px;
   }
-  
+
   .method-description-box p {
     font-size: 17px;
   }
@@ -989,17 +989,17 @@ box-shadow: 0 20px 40px rgba(0,0,0,0.1);
   .design-method-section {
     padding: 2% 30px;
   }
-  
+
   .method-wrapper {
     flex-direction: column;
     gap: 40px;
   }
-  
+
   .method-visual-container {
     width: 100%;
     height: 400px;
   }
-  
+
   .method-main-heading {
     font-size: 32px;
   }
@@ -1009,16 +1009,16 @@ box-shadow: 0 20px 40px rgba(0,0,0,0.1);
   .design-method-section {
     padding: 2% 20px;
   }
-  
+
   .method-main-heading {
     font-size: 28px;
     margin-bottom: 20px;
   }
-  
+
   .method-description-box p {
     font-size: 16px;
   }
-  
+
   .method-visual-container {
     height: 300px;
   }
@@ -1030,7 +1030,7 @@ box-shadow: 0 20px 40px rgba(0,0,0,0.1);
   padding: 2% 40px;
   display: flex;
   justify-content: center;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
 }
 
 .branding-align-wrapper {
@@ -1059,7 +1059,7 @@ box-shadow: 0 20px 40px rgba(0,0,0,0.1);
   line-height: 1.6;
   margin-bottom: 20px;
   color: #030422;
-  max-width: 100%; 
+  max-width: 100%;
   font-weight: bolder;
 }
 
@@ -1068,7 +1068,7 @@ box-shadow: 0 20px 40px rgba(0,0,0,0.1);
   line-height: 1.6;
   margin-bottom: 20px;
   color: #030422;
-  max-width: 100%; 
+  max-width: 100%;
 }
 
 /* Images Only Flexbox */
@@ -1081,7 +1081,7 @@ box-shadow: 0 20px 40px rgba(0,0,0,0.1);
   flex: 1;
   border-radius: 24px;
   overflow: hidden;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
   height: 500px;
   object-fit: cover;
 }
@@ -1091,15 +1091,15 @@ box-shadow: 0 20px 40px rgba(0,0,0,0.1);
   .branding-title-heading {
     font-size: 36px;
   }
-  
+
   .branding-copy-block p {
     font-size: 17px;
   }
-  
+
   .branding-images-flex {
     gap: 20px;
   }
-  
+
   .branding-img-item {
     height: 350px;
   }
@@ -1109,16 +1109,16 @@ box-shadow: 0 20px 40px rgba(0,0,0,0.1);
   .branding-visual-section {
     padding: 2% 30px;
   }
-  
+
   .branding-title-heading {
     font-size: 32px;
   }
-  
+
   .branding-images-flex {
     flex-direction: column;
     gap: 20px;
   }
-  
+
   .branding-img-item {
     height: 300px;
     width: 100%;
@@ -1129,16 +1129,16 @@ box-shadow: 0 20px 40px rgba(0,0,0,0.1);
   .branding-visual-section {
     padding: 2% 20px;
   }
-  
+
   .branding-title-heading {
     font-size: 28px;
     margin-bottom: 20px;
   }
-  
+
   .branding-copy-block p {
     font-size: 16px;
   }
-  
+
   .branding-img-item {
     height: 250px;
   }
@@ -1174,7 +1174,7 @@ box-shadow: 0 20px 40px rgba(0,0,0,0.1);
 }
 
 .thankyou-signature {
-  font-family: 'Sellebou', sans-serif;
+  font-family: "Sellebou", sans-serif;
   font-size: 32px;
   margin-bottom: 40px;
   color: #030422;
@@ -1203,11 +1203,11 @@ box-shadow: 0 20px 40px rgba(0,0,0,0.1);
   .thankyou-main-heading {
     font-size: 20px;
   }
-  
+
   .thankyou-subtext {
     font-size: 22px;
   }
-  
+
   .thankyou-signature {
     font-size: 28px;
   }
@@ -1217,19 +1217,19 @@ box-shadow: 0 20px 40px rgba(0,0,0,0.1);
   .thankyou-final-section {
     padding: 2% 30px;
   }
-  
+
   .thankyou-main-heading {
     font-size: 18px;
   }
-  
+
   .thankyou-subtext {
     font-size: 20px;
   }
-  
+
   .thankyou-signature {
     font-size: 26px;
   }
-  
+
   .thankyou-contact-button {
     padding: 14px 35px;
     font-size: 17px;
@@ -1240,20 +1240,20 @@ box-shadow: 0 20px 40px rgba(0,0,0,0.1);
   .thankyou-final-section {
     padding: 2% 20px;
   }
-  
+
   .thankyou-main-heading {
     font-size: 16px;
   }
-  
+
   .thankyou-subtext {
     font-size: 18px;
   }
-  
+
   .thankyou-signature {
     font-size: 24px;
     margin-bottom: 30px;
   }
-  
+
   .thankyou-contact-button {
     padding: 12px 30px;
     font-size: 16px;
