@@ -672,6 +672,7 @@ body {
   .about-glass-card {
     flex-direction: column;
     min-height: auto;
+    margin-top: 8%;
   }
 
   .about-image-container {
