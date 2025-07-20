@@ -46,7 +46,6 @@ body {
   position: fixed;
   top: 0;
   transition: all 0.3s ease;
- 
 }
 
 .logo img {
@@ -104,7 +103,6 @@ body {
   overflow: hidden;
   z-index: 500;
   max-height: 80vh;
-  overflow-y: auto;
 }
 
 .text-content {
@@ -172,6 +170,7 @@ body {
   background-repeat: no-repeat;
   image-rendering: -webkit-optimize-contrast;
   image-rendering: crisp-edges;
+  margin-top: 5%;
 }
 
 .about-glass-card {
@@ -636,9 +635,8 @@ body {
 }
 
 @media (max-width: 768px) {
-
-   .main-container {
-    margin-top: 16%; /* Added this line only */
+  .main-container {
+    margin-top: 16%;
   }
   .glass-card {
     flex-direction: column;
@@ -668,14 +666,13 @@ body {
   .text-content p {
     font-size: 16px;
   }
-  .about-section{
-    margin-top: 10%;
+  .about-section {
+    margin-top: 5%;
   }
 
   .about-glass-card {
     flex-direction: column;
     min-height: auto;
-    margin-top: 8%;
   }
 
   .about-image-container {
@@ -838,8 +835,8 @@ body {
   .navbar {
     padding: 15px 20px;
   }
-   .main-container {
-    margin-top: 18%; /* Added this line only */
+  .main-container {
+    margin-top: 18%;
   }
 
   .nav-links {
