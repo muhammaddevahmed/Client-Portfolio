@@ -668,6 +668,9 @@ body {
   .text-content p {
     font-size: 16px;
   }
+  .about-section{
+    margin-top: 10%;
+  }
 
   .about-glass-card {
     flex-direction: column;
