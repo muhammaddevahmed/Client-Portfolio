@@ -943,3 +943,54 @@ body {
     background-attachment: scroll;
   }
 }
+
+
+/* Form validation errors */
+.form-group.error {
+  position: relative;
+}
+
+.form-group.error input,
+.form-group.error textarea {
+  border-color: #ff4444;
+}
+
+.form-group.error::after {
+  content: "This field is required";
+  position: absolute;
+  bottom: -18px;
+  left: 0;
+  color: #ff4444;
+  font-size: 12px;
+}
+
+/* Form messages */
+.form-message {
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  animation: fadeIn 0.3s ease;
+}
+
+.form-message svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.form-message.success {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.form-message.error {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
