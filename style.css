@@ -638,7 +638,7 @@ body {
 @media (max-width: 768px) {
 
    .main-container {
-    margin-top: 2%; /* Added this line only */
+    margin-top: 16%; /* Added this line only */
   }
   .glass-card {
     flex-direction: column;
@@ -835,7 +835,7 @@ body {
     padding: 15px 20px;
   }
    .main-container {
-    margin-top: 10%; /* Added this line only */
+    margin-top: 18%; /* Added this line only */
   }
 
   .nav-links {
