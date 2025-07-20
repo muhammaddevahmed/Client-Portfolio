@@ -156,40 +156,24 @@ document.addEventListener("DOMContentLoaded", function () {
     slider.style.transform = `translateX(${currentTranslate}px)`;
     if (isDragging) requestAnimationFrame(animation);
   }
-
- document.addEventListener("click", function (e) {
+document.addEventListener("click", function (e) {
   const projectContainer = e.target.closest(".project-image-container");
   if (projectContainer) {
     const projectNumber = parseInt(projectContainer.dataset.project);
     
-
+    const projectPages = {
+      1: "project1.html",
+      2: "project2.html", 
+      3: "project3.html",
+      4: "project4.html",
+      5: "project5.html"
+    };
     
-    Swal.fire({
-      title: 'Read Case Study',
-      text: `Are you sure you want to open this Project ?`,
-      icon: 'question',
-      showCancelButton: true,
-      confirmButtonText: 'Yes, open it!',
-      cancelButtonText: 'No, cancel',
-      reverseButtons: true
-    }).then((result) => {
-      if (result.isConfirmed) {
-        const projectPages = {
-          1: "project1.html",
-          2: "project2.html", 
-          3: "project3.html",
-          4: "project4.html",
-          5: "project5.html"
-        };
-        
-        if (projectPages[projectNumber]) {
-          window.location.href = projectPages[projectNumber];
-        }
-      }
-    });
+    if (projectPages[projectNumber]) {
+      window.location.href = projectPages[projectNumber];
+    }
   }
 });
-
   // Initialize the slider
   setupSlider();
 
