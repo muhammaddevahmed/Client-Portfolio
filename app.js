@@ -201,3 +201,21 @@ document.addEventListener("click", function (e) {
     navLinks.classList.toggle("active");
   });
 });
+
+
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+  event.preventDefault();
+  
+  // Get your Service ID and Template ID from EmailJS dashboard
+  const serviceID = 'service_23cfr3n';
+  const templateID = 'template_srtq498';
+  
+  // Send the email
+  emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      alert('Message sent successfully!');
+      document.getElementById('contact-form').reset();
+    }, (error) => {
+      alert('Failed to send message: ' + JSON.stringify(error));
+    });
+});
