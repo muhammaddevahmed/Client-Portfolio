@@ -654,6 +654,10 @@ body {
     margin-top: 80px;
     height: calc(100vh - 80px);
   }
+
+  .glass-card {
+    margin-top: 5%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -665,7 +669,7 @@ body {
     flex-direction: column;
     padding: 30px;
     max-height: 100vh;
-    margin-top: 30px;
+    margin-top: 5%;
   }
 
   .text-content {
@@ -875,7 +879,7 @@ body {
     height: calc(100vh - 80px);
   }
   .glass-card {
-    margin-top: 20px;
+    margin-top: 5%;
   }
 
   .nav-links {
@@ -997,7 +1001,7 @@ body {
 @media (max-width: 479px) {
   .glass-card {
     padding: 20px;
-    margin-top: 20px;
+    margin-top: 5%;
   }
 
   .image-content img {
