@@ -23,17 +23,17 @@ body {
 
 /* Background container for navbar and card */
 .hero-section {
-  background-color: #040425;
   background-image: url("images/hero-bg.png");
-  background-size: 75% auto;
-  background-repeat: no-repeat;
-  background-attachment: local;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   width: 100%;
   position: relative;
   min-height: 100vh;
-  padding-top: 3%;
+  background-repeat: no-repeat;
   image-rendering: -webkit-optimize-contrast;
   image-rendering: crisp-edges;
+  padding-top: 3%;
 }
 
 .navbar {
@@ -49,9 +49,9 @@ body {
 }
 
 .logo img {
-  height: 80px;
+  height: 70px;
   transition: transform 0.3s ease;
-  margin-left: 45%;
+  margin-left: 5%;
 }
 
 .logo img:hover {
@@ -124,14 +124,14 @@ body {
   font-size: 32px;
   font-weight: 600;
   margin-bottom: 25px;
-  color: #fafafa;
+  color: #d1e0ff;
 }
 
 .text-content p {
   font-family: "Montserrat", sans-serif;
   font-size: 24px;
   line-height: 1.8;
-  color: #fafafa;
+  color: #b3c5e6;
 }
 
 .image-content {
@@ -156,11 +156,10 @@ body {
 
 /* About Me Section Styles */
 .about-section {
-  background-color: #040425;
   background-image: url("images/about-bg.png");
-  background-size: 75% auto;
-  background-repeat: no-repeat;
-  background-attachment: local;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   width: 100%;
   min-height: 90vh;
   display: flex;
@@ -168,9 +167,10 @@ body {
   justify-content: center;
   padding: 80px 20px;
   position: relative;
-  margin: 5% 0;
+  background-repeat: no-repeat;
   image-rendering: -webkit-optimize-contrast;
   image-rendering: crisp-edges;
+  margin-top: 5%;
 }
 
 .about-glass-card {
@@ -288,21 +288,20 @@ body {
   background: linear-gradient(135deg, #a3bffa, #5a7ec8);
 }
 
-/* Portfolio Section Styles */
+/* Portfolio Section Styles - Updated for consistent size */
 .portfolio-section {
-  background-color: #040425;
-  background-image: url("images/project-bg.png");
-  background-size: 75% auto;
-  background-repeat: no-repeat;
-  background-attachment: local;
   width: 100%;
   min-height: 90vh;
   position: relative;
+  background-image: url("images/project-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 80px 20px;
-  margin: 5% 0;
+  background-repeat: no-repeat;
   image-rendering: -webkit-optimize-contrast;
   image-rendering: crisp-edges;
 }
@@ -479,11 +478,9 @@ body {
 
 /* Contact Section Styles */
 .contact-section {
-  background-color: #040425;
   background-image: url("images/contact-bg.png");
-  background-size: 75% auto;
-  background-repeat: no-repeat;
-  background-attachment: local;
+  background-size: cover;
+  background-position: center;
   width: 100%;
   min-height: 90vh;
   display: flex;
@@ -491,7 +488,7 @@ body {
   justify-content: center;
   padding: 80px 20px;
   position: relative;
-  margin: 5% 0;
+  background-repeat: no-repeat;
   image-rendering: -webkit-optimize-contrast;
   image-rendering: crisp-edges;
 }
@@ -634,14 +631,6 @@ body {
 
   .contact-form-container {
     padding: 40px;
-  }
-
-  /* Adjust background images for tablet to cover 80% of card height */
-  .hero-section,
-  .about-section,
-  .portfolio-section,
-  .contact-section {
-    background-size: auto 80%;
   }
 }
 
@@ -818,15 +807,6 @@ body {
   .submit-btn {
     align-self: center;
   }
-
-  /* Adjust background images for mobile to cover 80% of card height */
-  .hero-section,
-  .about-section,
-  .portfolio-section,
-  .contact-section {
-    background-size: auto 80%;
-    background-attachment: scroll;
-  }
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
@@ -965,12 +945,12 @@ body {
     max-width: 250px;
   }
 
-  /* Adjust background images for small mobile to cover 80% of card height */
+  /* Disable parallax on small mobile devices */
   .hero-section,
   .about-section,
   .portfolio-section,
   .contact-section {
-    background-size: auto 80%;
+    background-attachment: scroll;
   }
 }
 

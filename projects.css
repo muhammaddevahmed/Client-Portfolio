@@ -192,7 +192,6 @@ body {
   justify-content: center;
   align-items: center;
   min-height: auto;
-  
 }
 
 .hero-card {
@@ -244,8 +243,9 @@ body {
 }
 
 .hero-button:hover {
-  background-color: transparent;
-  color: #030422;
+  background-color: black;
+  color: #ffffff;
+  transform: translateY(-3px);
 }
 
 .hero-image {
