@@ -658,7 +658,7 @@ body {
 
 @media (max-width: 768px) {
   .main-container {
-    margin-top: 80px;
+    margin-top: 90px;
     height: calc(100vh - 80px);
   }
   .glass-card {
