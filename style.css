@@ -643,6 +643,11 @@ body {
   .contact-section {
     background-size: auto 80%;
   }
+
+  .image-content img {
+    max-width: 100%;
+    max-height: 100%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -760,8 +765,8 @@ body {
   }
 
   .image-content img {
-    max-height: 300px;
-    margin-top: 5%;
+    max-width: 100%;
+    max-height: 100%;
   }
 
   .portfolio-section {
@@ -916,8 +921,8 @@ body {
   }
 
   .image-content img {
-    max-height: 250px;
-    margin-top: 5%;
+    max-width: 100%;
+    max-height: 100%;
   }
 
   .about-text-overlay h1 {
@@ -973,6 +978,18 @@ body {
   .portfolio-section,
   .contact-section {
     background-size: auto 80%;
+  }
+}
+
+@media (max-width: 479px) {
+  .glass-card {
+    padding: 20px;
+  }
+
+  .image-content img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
   }
 }
 
