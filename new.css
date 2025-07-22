@@ -23,17 +23,17 @@ body {
 
 /* Background container for navbar and card */
 .hero-section {
+  background-color: #040425;
   background-image: url("images/hero-bg.png");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background-size: 75% auto;
+  background-repeat: no-repeat;
+  background-attachment: local;
   width: 100%;
   position: relative;
   min-height: 100vh;
-  background-repeat: no-repeat;
+  padding-top: 3%;
   image-rendering: -webkit-optimize-contrast;
   image-rendering: crisp-edges;
-  padding-top: 3%;
 }
 
 .navbar {
@@ -49,9 +49,9 @@ body {
 }
 
 .logo img {
-  height: 70px;
+  height: 80px;
   transition: transform 0.3s ease;
-  margin-left: 5%;
+  margin-left: 45%;
 }
 
 .logo img:hover {
@@ -124,14 +124,14 @@ body {
   font-size: 32px;
   font-weight: 600;
   margin-bottom: 25px;
-  color: #d1e0ff;
+  color: #fafafa;
 }
 
 .text-content p {
   font-family: "Montserrat", sans-serif;
   font-size: 24px;
   line-height: 1.8;
-  color: #b3c5e6;
+  color: #fafafa;
 }
 
 .image-content {
@@ -156,10 +156,11 @@ body {
 
 /* About Me Section Styles */
 .about-section {
+  background-color: #040425;
   background-image: url("images/about-bg.png");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background-size: 75% auto;
+  background-repeat: no-repeat;
+  background-attachment: local;
   width: 100%;
   min-height: 90vh;
   display: flex;
@@ -167,10 +168,9 @@ body {
   justify-content: center;
   padding: 80px 20px;
   position: relative;
-  background-repeat: no-repeat;
+  margin: 5% 0;
   image-rendering: -webkit-optimize-contrast;
   image-rendering: crisp-edges;
-  margin-top: 5%;
 }
 
 .about-glass-card {
@@ -288,20 +288,21 @@ body {
   background: linear-gradient(135deg, #a3bffa, #5a7ec8);
 }
 
-/* Portfolio Section Styles - Updated for consistent size */
+/* Portfolio Section Styles */
 .portfolio-section {
+  background-color: #040425;
+  background-image: url("images/project-bg.png");
+  background-size: 75% auto;
+  background-repeat: no-repeat;
+  background-attachment: local;
   width: 100%;
   min-height: 90vh;
   position: relative;
-  background-image: url("images/project-bg.png");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 80px 20px;
-  background-repeat: no-repeat;
+  margin: 5% 0;
   image-rendering: -webkit-optimize-contrast;
   image-rendering: crisp-edges;
 }
@@ -478,9 +479,11 @@ body {
 
 /* Contact Section Styles */
 .contact-section {
+  background-color: #040425;
   background-image: url("images/contact-bg.png");
-  background-size: cover;
-  background-position: center;
+  background-size: 75% auto;
+  background-repeat: no-repeat;
+  background-attachment: local;
   width: 100%;
   min-height: 90vh;
   display: flex;
@@ -488,7 +491,7 @@ body {
   justify-content: center;
   padding: 80px 20px;
   position: relative;
-  background-repeat: no-repeat;
+  margin: 5% 0;
   image-rendering: -webkit-optimize-contrast;
   image-rendering: crisp-edges;
 }
@@ -632,6 +635,19 @@ body {
   .contact-form-container {
     padding: 40px;
   }
+
+  /* Adjust background images for tablet to cover 80% of card height */
+  .hero-section,
+  .about-section,
+  .portfolio-section,
+  .contact-section {
+    background-size: auto 80%;
+  }
+
+  .image-content img {
+    max-width: 100%;
+    max-height: 100%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -641,7 +657,7 @@ body {
   .glass-card {
     flex-direction: column;
     padding: 30px;
-    max-height: 90vh;
+    max-height: 100vh;
   }
 
   .text-content {
@@ -667,7 +683,7 @@ body {
     font-size: 16px;
   }
   .about-section {
-    margin-top: 5%;
+    margin-top: 15%;
   }
 
   .about-glass-card {
@@ -749,7 +765,9 @@ body {
   }
 
   .image-content img {
-    max-height: 300px;
+    max-width: 100%;
+    max-height: 100%;
+    margin-bottom: 5%;
   }
 
   .portfolio-section {
@@ -806,6 +824,15 @@ body {
 
   .submit-btn {
     align-self: center;
+  }
+
+  /* Adjust background images for mobile to cover 80% of card height */
+  .hero-section,
+  .about-section,
+  .portfolio-section,
+  .contact-section {
+    background-size: auto 80%;
+    background-attachment: scroll;
   }
 }
 
@@ -895,7 +922,8 @@ body {
   }
 
   .image-content img {
-    max-height: 250px;
+    max-width: 100%;
+    max-height: 100%;
   }
 
   .about-text-overlay h1 {
@@ -945,12 +973,24 @@ body {
     max-width: 250px;
   }
 
-  /* Disable parallax on small mobile devices */
+  /* Adjust background images for small mobile to cover 80% of card height */
   .hero-section,
   .about-section,
   .portfolio-section,
   .contact-section {
-    background-attachment: scroll;
+    background-size: auto 80%;
+  }
+}
+
+@media (max-width: 479px) {
+  .glass-card {
+    padding: 20px;
+  }
+
+  .image-content img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
   }
 }
 

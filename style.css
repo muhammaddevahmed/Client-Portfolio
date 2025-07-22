@@ -46,6 +46,7 @@ body {
   position: fixed;
   top: 0;
   transition: all 0.3s ease;
+  
 }
 
 .logo img {
@@ -652,7 +653,8 @@ body {
 
 @media (max-width: 768px) {
   .main-container {
-    margin-top: 16%;
+    margin-top: 80px;
+    height: calc(100vh - 80px);
   }
   .glass-card {
     flex-direction: column;
@@ -863,7 +865,8 @@ body {
     padding: 15px 20px;
   }
   .main-container {
-    margin-top: 18%;
+    margin-top: 80px;
+    height: calc(100vh - 80px);
   }
 
   .nav-links {
