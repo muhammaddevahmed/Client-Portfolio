@@ -657,7 +657,7 @@ body {
   .glass-card {
     flex-direction: column;
     padding: 30px;
-    max-height: 94vh;
+    max-height: 98vh;
   }
 
   .text-content {
