@@ -761,6 +761,7 @@ body {
 
   .image-content img {
     max-height: 300px;
+    margin-top: 5%;
   }
 
   .portfolio-section {
@@ -916,6 +917,7 @@ body {
 
   .image-content img {
     max-height: 250px;
+    margin-top: 5%;
   }
 
   .about-text-overlay h1 {
