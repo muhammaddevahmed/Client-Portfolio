@@ -658,14 +658,14 @@ body {
 
 @media (max-width: 768px) {
   .main-container {
-    margin-top: 90px;
+    margin-top: 80px;
     height: calc(100vh - 80px);
   }
   .glass-card {
     flex-direction: column;
     padding: 30px;
     max-height: 100vh;
-    margin-top: 20px;
+    margin-top: 30px;
   }
 
   .text-content {
