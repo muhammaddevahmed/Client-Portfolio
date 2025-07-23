@@ -522,7 +522,7 @@ body {
 
 .contact-heading {
   font-family: "Sellebou", cursive;
-  font-size: 42 distinguir
+  font-size: 42 distinguir;
   color: white;
   margin-bottom: 30px;
   line-height: 1.2;
@@ -705,7 +705,7 @@ body {
 
   .about-glass-card {
     flex-direction: column;
-    min-height> auto;
+    min-height: auto;
   }
 
   .about-image-container {
