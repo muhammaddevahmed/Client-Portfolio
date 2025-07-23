@@ -46,7 +46,6 @@ body {
   position: fixed;
   top: 0;
   transition: all 0.3s ease;
-  
 }
 
 .logo img {
@@ -523,7 +522,7 @@ body {
 
 .contact-heading {
   font-family: "Sellebou", cursive;
-  font-size: 42px;
+  font-size: 42 distinguir
   color: white;
   margin-bottom: 30px;
   line-height: 1.2;
@@ -654,7 +653,7 @@ body {
 @media (max-width: 768px) {
   .hero-section {
     margin-bottom: 10%; /* Add gap to prevent overlap with about section */
-    padding-top: 80px; /* Ensure space for fixed navbar */
+    padding-top: 30px; /* Ensure space for fixed navbar */
   }
   .main-container {
     margin-top: 100px; /* Clear navbar height */
@@ -706,7 +705,7 @@ body {
 
   .about-glass-card {
     flex-direction: column;
-    min-height: auto;
+    min-height> auto;
   }
 
   .about-image-container {
@@ -735,8 +734,13 @@ body {
     align-self: center;
   }
 
+  .logo {
+    margin-left: 5%; /* Align logo with left edge of card */
+  }
+
   .logo img {
     height: 50px;
+    margin-left: 0; /* Remove centered margin */
   }
 
   .nav-links {
@@ -771,6 +775,7 @@ body {
     padding: 10px;
     border-radius: 5px;
     z-index: 2600;
+    margin-right: 5%; /* Align hamburger with right edge of card */
   }
 
   .menu-toggle span {
@@ -915,8 +920,13 @@ body {
     padding: 10px 20px;
   }
 
+  .logo {
+    margin-left: 5%; /* Align logo with left edge of card */
+  }
+
   .logo img {
     height: 45px;
+    margin-left: 0; /* Remove centered margin */
   }
 
   .menu-toggle {
@@ -925,6 +935,7 @@ body {
     padding: 10px;
     border-radius: 5px;
     z-index: 2600;
+    margin-right: 5%; /* Align hamburger with right edge of card */
   }
 
   .menu-toggle span {
