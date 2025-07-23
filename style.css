@@ -652,14 +652,14 @@ body {
 
 @media (max-width: 768px) {
   .main-container {
-    margin-top: 30%; /* Increased from 16% to 20% for more gap */
+    margin-top: 30%;
   }
   .glass-card {
     flex-direction: column;
     padding: 30px;
     max-height: 100vh;
   }
-  .image-content{
+  .image-content {
     margin-bottom: 10%;
   }
 
@@ -672,6 +672,18 @@ body {
 
   .image-content {
     width: 100%;
+  }
+
+  .image-content img {
+    max-width: 100%;
+    max-height: none; /* Remove height constraint to prevent cutting */
+    object-fit: contain; /* Ensure image scales without cropping */
+    border-radius: 8px;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor;
   }
 
   .text-content h1 {
@@ -767,12 +779,6 @@ body {
     transition: all 0.3s;
   }
 
-  .image-content img {
-    max-width: 100%;
-    max-height: 100%;
-    margin-bottom: 20%;
-  }
-
   .portfolio-section {
     padding: 4rem 1rem;
   }
@@ -866,7 +872,7 @@ body {
     padding: 15px 20px;
   }
   .main-container {
-    margin-top: 30%; /* Increased from 18% to 22% for more gap */
+    margin-top: 30%;
   }
 
   .nav-links {
@@ -926,7 +932,14 @@ body {
 
   .image-content img {
     max-width: 100%;
-    max-height: 100%;
+    max-height: none; /* Remove height constraint to prevent cutting */
+    object-fit: contain; /* Ensure image scales without cropping */
+    border-radius: 8px;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor;
   }
 
   .about-text-overlay h1 {
@@ -992,7 +1005,7 @@ body {
 
   .image-content img {
     max-width: 100%;
-    max-height: 100%;
+    max-height: none;
     object-fit: contain;
   }
 }
