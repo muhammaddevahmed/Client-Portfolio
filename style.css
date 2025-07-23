@@ -31,7 +31,7 @@ body {
   width: 100%;
   position: relative;
   min-height: 100vh;
-  padding-top: 3%;
+  padding-top: 80px; /* Adjusted to account for fixed navbar height */
   image-rendering: -webkit-optimize-contrast;
   image-rendering: crisp-edges;
 }
@@ -46,6 +46,7 @@ body {
   position: fixed;
   top: 0;
   transition: all 0.3s ease;
+  
 }
 
 .logo img {
@@ -653,9 +654,11 @@ body {
 @media (max-width: 768px) {
   .hero-section {
     margin-bottom: 10%; /* Add gap to prevent overlap with about section */
+    padding-top: 80px; /* Ensure space for fixed navbar */
   }
   .main-container {
-    margin-top: 30%;
+    margin-top: 100px; /* Clear navbar height */
+    height: auto; /* Allow natural height to prevent clipping */
   }
   .glass-card {
     flex-direction: column;
@@ -869,13 +872,15 @@ body {
 
 @media (max-width: 480px) {
   .hero-section {
-    margin-bottom: 12%; /* Add gap to prevent overlap with about section */
+    margin-bottom: 10%; /* Add gap to prevent overlap with about section */
+    padding-top: 30px; /* Ensure space for fixed navbar */
   }
   .navbar {
     padding: 15px 20px;
   }
   .main-container {
-    margin-top: 30%;
+    margin-top: 100px; /* Clear navbar height */
+    height: auto; /* Allow natural height to prevent clipping */
   }
 
   .glass-card {
